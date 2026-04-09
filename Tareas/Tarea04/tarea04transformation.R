@@ -42,3 +42,4 @@ vuelos_clima <- flights %>%
   inner_join(weather, by = c("origin", "year", "month", "day", "hour"))
 
 # Fin del script detallado
+
