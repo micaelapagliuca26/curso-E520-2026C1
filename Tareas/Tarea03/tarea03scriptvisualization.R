@@ -32,3 +32,4 @@ ggplot(df_scatter, aes(x = x)) +
   labs(title = "Distribución de la variable X")
 
 # Fin del script de visualización
+
