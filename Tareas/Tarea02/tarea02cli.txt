@@ -1,0 +1,21 @@
+Script started on Thu Apr  9 12:58:48 2026
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ pwd
+/Users/antopagliuca/curso-E520-2026C1/Tareas/Tarea02
+bash-3.2$ ls -la
+total 8
+drwxr-xr-x  4 antopagliuca  staff  128 Apr  9 12:58 .
+drwxr-xr-x  6 antopagliuca  staff  192 Apr  9 12:53 ..
+drwxr-xr-x  2 antopagliuca  staff   64 Apr  9 12:04 Tarea01
+-rw-r--r--  1 antopagliuca  staff  244 Apr  9 12:59 tarea02cli.txt
+bash-3.2$ echo "Registro de la Tarea 02 de Antonella"
+Registro de la Tarea 02 de Antonella
+bash-3.2$ date
+Thu Apr  9 13:00:35 -03 2026
+bash-3.2$ exit
+exit
+
+Script done on Thu Apr  9 13:00:45 2026
