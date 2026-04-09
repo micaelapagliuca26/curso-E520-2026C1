@@ -1,0 +1,15 @@
+Script started on Thu Apr  9 11:47:11 2026
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ pwd
+/Users/antopagliuca/curso-E520-2026C1/Tareas/Tarea02
+bash-3.2$ ls
+Tarea_02_PowerShell_Transcript.txt	tarea02.R
+bash-3.2$ date
+Thu Apr  9 11:47:53 -03 2026
+bash-3.2$ exit
+exit
+
+Script done on Thu Apr  9 11:48:05 2026
