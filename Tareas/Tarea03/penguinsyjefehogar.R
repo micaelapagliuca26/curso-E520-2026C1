@@ -167,3 +167,58 @@ nivel_edu <- factor(c("Secundario", "Universitario", "Primario"),
                     levels = c("Primario", "Secundario", "Universitario"),
                     ordered = TRUE)
 summary(nivel_edu)
+
+#TAREA 
+library(palmerpenguins)
+library(tidyverse)
+
+# Ver dimensiones (Filas, Columnas)
+dim(penguins)
+# O de forma separada:
+nrow(penguins) # 344 filas
+ncol(penguins) # 8 columnas
+
+ggplot(data = penguins, mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point()
+ggplot(data = penguins, mapping = aes(x = species, y = bill_depth_mm)) +
+  geom_point()
+ggplot(data = penguins, mapping = aes(x = bill_length_mm, y = bill_depth_mm)) + 
+  geom_point()
+ggplot(data = penguins, mapping = aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(na.rm = TRUE)
+ggplot(data = penguins, mapping = aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(na.rm = TRUE) +
+  labs(caption = "Data come from the palmerpenguins package.")
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_length_mm, 
+                     y = bill_depth_mm, 
+                     color = species)) + # Mapeo global
+  geom_point() +
+  geom_smooth(method = "lm") # Esto añade líneas de tendencia por especie
+
+
+ggplot(
+  data = penguins,
+  mapping = aes(x = flipper_length_mm, y = body_mass_g, color = island)
+) +
+  geom_point() +
+  geom_smooth(se = FALSE)
+
+ggplot(
+  data = penguins,
+  mapping = aes(x = flipper_length_mm, y = body_mass_g)
+) +
+  geom_point() +
+  geom_smooth()
+
+ggplot() +
+  geom_point(
+    data = penguins,
+    mapping = aes(x = flipper_length_mm, y = body_mass_g)
+  ) +
+  geom_smooth(
+    data = penguins,
+    mapping = aes(x = flipper_length_mm, y = body_mass_g)
+  )
+
