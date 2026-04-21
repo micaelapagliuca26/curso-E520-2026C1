@@ -173,3 +173,5 @@ quijote %>%
   coord_flip() +
   labs(title = "Frecuencia de palabras: Don Quijote", x = "", y = "Frecuencia") +
   theme_minimal()
+
+#fin
